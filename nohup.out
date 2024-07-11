@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/django-todo/manage.py", line 10, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/django-todo/manage.py", line 21, in <module>
+    main()
+  File "/home/ubuntu/projects/django-todo/manage.py", line 12, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/django-todo/manage.py", line 10, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/projects/django-todo/manage.py", line 21, in <module>
+    main()
+  File "/home/ubuntu/projects/django-todo/manage.py", line 12, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+todos.Todo: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 1 issue (0 silenced).
+[10/Jul/2024 13:28:25] "GET /todos/ HTTP/1.1" 200 3510
+[10/Jul/2024 13:28:31] "GET /todos/ HTTP/1.1" 200 3510
+[10/Jul/2024 13:46:31] "GET /todos/ HTTP/1.1" 200 3510
+[10/Jul/2024 13:46:31] "GET /static/css/style.css HTTP/1.1" 304 0
+[10/Jul/2024 13:46:48] "POST /todos/add/ HTTP/1.1" 302 0
+[10/Jul/2024 13:46:48,728] - Broken pipe from ('152.59.1.68', 52772)
+[10/Jul/2024 13:46:48] "POST /todos/add/ HTTP/1.1" 302 0
+[10/Jul/2024 13:46:49] "GET /todos/ HTTP/1.1" 200 4670
+[10/Jul/2024 13:46:52] "GET /todos/23/delete HTTP/1.1" 302 0
+[10/Jul/2024 13:46:52] "GET /todos/ HTTP/1.1" 200 4090
+[10/Jul/2024 13:47:45] "GET /todos/ HTTP/1.1" 200 4090
+Performing system checks...
+
+July 10, 2024 - 13:28:22
+Django version 5.0.7, using settings 'todoApp.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
